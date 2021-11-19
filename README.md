@@ -10,4 +10,4 @@ The analyses in the submitted paper can be reproduced by downloading this repo a
 
 (1) gives the results for the observed data; (2) gives the results of the simulation validation test; and (3) gives the results of the simulation study.
 
-*Note that the simulation validation and simulation study each take hours to complete
+*Note that the simulation study may take hours to complete
