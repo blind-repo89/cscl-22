@@ -5,12 +5,14 @@ sim_mods = function(codes,
                     adj_mats,
                     window_size_inter,
                     type,
-                    normalize){
+                    normalize,
+                    steps){
   
   ##simulate data
   dat_ = sim_discourse_3.1(trans_mat = trans_mat,
                            adj_mats = adj_mats,
-                           type = type)
+                           type = type,
+                           steps = steps)
   
   
   #browser()

@@ -12,14 +12,17 @@
 sim_discourse_3.1 = function(trans_mat,
                              adj_mats,
                              type,
-                             steps = NULL){
+                             steps = steps){
   
   #simulate talk sequence using transition matrix
   if(type == "real"){
     mat_ = trans_mat$mat
     steps = trans_mat$linetot
-  }else{
+  }else if(type == "sim"){
     mat_= trans_mat
+    steps = steps
+  }else{
+    mat_= trans_mat$mat
     steps = steps
   }
   speaker_seq_info = sim_speaker_sequence(mat_,steps,type)
